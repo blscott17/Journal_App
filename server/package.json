@@ -1,6 +1,4 @@
-
-{ 
-
+{
   "name": "node-modules-server",
   "version": "1.0.0",
   "description": "Journal",
@@ -24,4 +22,4 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.1"
   }
-} 
+}
