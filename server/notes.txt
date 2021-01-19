@@ -1,0 +1,27 @@
+app.js is the main hub of your server because of this code: 
+"main": "app.js", in package.json.
+
+import the express engine - we are importing this from the node modules
+because of this code: "express": "^4.17.1", in package.json.
+
+create instance of express
+npx nodemon  runs code must put npx in front of nodemon
+Ctrl + Ctrl - stops the server
+rs restarts the server
+
+To start the server:
+1) open app.js in Integrated Terminal
+2) type npx nodeman
+3) trashcan on terminal or closing Visual Studio also stops the server  
+
+DATABASE NOTE:
+If you have to alter a model by adding a column it will not show up in PgAdmin. In PgAdmin you must select your table - right click and drop the table. And then rerun nodemon again. 
+
+USERCONTROLLER NOTES:
+Notes
+When we use require( ' dependency ' ) such as on line 1, we are importing and accessing dependencies we installed in our project. Our project's dependencies are housed in the package.json. This is a great place to check for spelling errors.
+When we use require( ' . /foldername/filename ' ) such as on line 6 to access information, we are following our file structure to walk through our various folders and access the correct file or function. This is another place to check for spelling errors.
+
+DEBUG HELP
+TROUBLE WITH json Response 9.2.5 copy error from terminal like this one:
+SequelizeUniqueConstraintError: Validation error and GOOGLE IT.
