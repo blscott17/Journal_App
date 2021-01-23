@@ -25,3 +25,8 @@ When we use require( ' . /foldername/filename ' ) such as on line 6 to access in
 DEBUG HELP
 TROUBLE WITH json Response 9.2.5 copy error from terminal like this one:
 SequelizeUniqueConstraintError: Validation error and GOOGLE IT.
+
+Push to GitHub 3 steps
+git add .
+git commit -m "message"
+git push origin main

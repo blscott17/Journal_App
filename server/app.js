@@ -1,18 +1,16 @@
 // modue 10.10 Add the import of dotenv first in this file
 require('dotenv').config();
-
 let express = require('express');
 let app = express();
-
 const sequelize = require('./db');
 
-let journal = require('./controllers/journalcontroller');
 const user = require('./controllers/usercontroller');
+let journal = require('./controllers/journalcontroller');
 let calc = require('./controllers/calculatorcontroller');
 
 sequelize.sync();
 //sequelize.sync({force: true})
-
+app.use(require('./middleware/headers'));
 app.use(express.json());
 app.use('/journal', journal);
 app.use('/about', journal);
@@ -21,6 +19,8 @@ app.use('/user', user);
 app.use('/calculator', calc);
 
 //create a listening port to communicate with the server using a callback function
+//(process.env.port) in place of 3000
+// `app is listening on port ${process.env.port})`;
 app.listen(3000, function () {
   console.log('app is listening on port 3000');
 });
